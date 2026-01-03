@@ -3,7 +3,7 @@
     {
       "id": "1",
       "count": 5,
-      "label": "Active Tripss",
+      "label": "Active Trips",
       "used": 300,
       "total": 302
     },
@@ -170,5 +170,4 @@
       "value": "fleet"
     }
   ]
-
 }
