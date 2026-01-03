@@ -74,9 +74,8 @@
                 }
               ],
               "outputHashing": "all",
-              "outputMode": "static",
-              "ssr": false,
-              "prerender": false
+              "server": "",
+              "ssr": false
             },
             "development": {
               "optimization": false,
