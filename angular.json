@@ -60,6 +60,23 @@
               ],
               "outputHashing": "all"
             },
+            "ghpages": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "2MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all",
+              "server": false,
+              "ssr": false
+            },
             "development": {
               "optimization": false,
               "extractLicenses": false,

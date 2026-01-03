@@ -5,9 +5,11 @@
     "ng": "ng",
     "start": "concurrently \"json-server --watch db.json --port 3000\" \"ng serve\"",
     "build": "ng build",
+    "build:ghpages": "ng build --configuration ghpages --base-href /userSaved_angular20/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ideal": "node dist/ideal/server/server.mjs"
+    "serve:ssr:ideal": "node dist/ideal/server/server.mjs",
+    "deploy:ghpages": "npm run build:ghpages && npx angular-cli-ghpages --dir=dist/ideal/browser"
   },
   "prettier": {
     "printWidth": 100,
@@ -56,6 +58,7 @@
     "@types/file-saver": "^2.0.7",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^20.17.19",
+    "angular-cli-ghpages": "^2.0.1",
     "concurrently": "^9.2.1",
     "jasmine-core": "~5.9.0",
     "json-server": "^1.0.0-beta.3",
